@@ -1,2 +1,3 @@
-import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-serve(()=>new Response("<h1>ThirdEye AI Live ✅</h1><p>Ishan ka AI ready hai! Ab Groq Key add karni hai.</p><p>Link: dhey19.deno.net</p>",{headers:{"Content-Type":"text/html"}}));
+Deno.serve((req)=>{
+  return new Response(`<html><body style="background:#000;color:#0f0;font-family:sans-serif;text-align:center;padding-top:100px"><h1>ThirdEye AI ✅ LIVE</h1><h2>Ishan ka AI Ready Hai!</h2><p>thirdeye-ai.deno.dev</p><p>Groq Key add karne ke baad chat start hoga</p></body></html>`,{headers:{"Content-Type":"text/html"}});
+});
